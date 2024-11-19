@@ -11,9 +11,7 @@
             	"name": "main"
             },
 			"assessment": {
-				"mode": "SOURCE_UPLOAD",
 				"types":  ["SAST"]
-
 			},
 			"serverUrl": "https://poc.polaris.synopsys.com"
 		}

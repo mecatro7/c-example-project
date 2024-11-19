@@ -1,0 +1,173 @@
+$ synopsys-bridge --stage polaris --input inputFile.json
+2024-11-19 03:23:35.7148 EST [Environment Variable] INFO: Provided value for resource 'POLARIS.ACCESSTOKEN'
+2024-11-19 03:23:35.7288 EST [--input] INFO: Added entry to resource 'polaris.assessment.types'
+2024-11-19 03:23:35.7292 EST [--input] INFO: Provided value for resource 'polaris.serverUrl'
+2024-11-19 03:23:35.7296 EST [--input] INFO: Provided value for resource 'polaris.application.name'
+2024-11-19 03:23:35.7299 EST [--input] INFO: Provided value for resource 'polaris.project.name'
+2024-11-19 03:23:35.7303 EST [--input] INFO: Provided value for resource 'polaris.branch.name'
+2024-11-19 03:23:35.7305 EST [Synopsys Bridge] INFO: Starting adapters for stage polaris
+2024-11-19 03:23:35.7340 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Status Provider
+2024-11-19 03:23:35.7341 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris SCM Discovery
+2024-11-19 03:23:35.7341 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Initializer
+2024-11-19 03:23:35.7342 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Controller
+2024-11-19 03:23:35.7636 EST [Synopsys Bridge] INFO: Starting Adapter: Set Polaris Wait For Scan
+2024-11-19 03:23:35.7640 EST [Set Polaris Wait For Scan] INFO: Provided value for resource 'polaris.waitForScan'
+2024-11-19 03:23:35.7641 EST [Set Polaris Wait For Scan] INFO: Adapter finished
+2024-11-19 03:23:35.8227 EST [Polaris SCM Discovery] INFO: Adapter finished
+2024-11-19 03:23:35.8381 EST [Synopsys Bridge] INFO: Starting Adapter: Set Polaris Assessment Mode to CI
+2024-11-19 03:23:35.8384 EST [Set Polaris Assessment Mode to CI] INFO: Provided value for resource 'polaris.assessment.mode'
+2024-11-19 03:23:35.8386 EST [Set Polaris Assessment Mode to CI] INFO: Adapter finished
+2024-11-19 03:23:35.8451 EST [Synopsys Bridge] INFO: Starting Adapter: Create Polaris Project & Branch By Default
+2024-11-19 03:23:35.8454 EST [Create Polaris Project & Branch By Default] INFO: Provided value for resource 'polaris.onboarding'
+2024-11-19 03:23:35.8455 EST [Create Polaris Project & Branch By Default] INFO: Adapter finished
+2024-11-19 03:23:37.6314 EST [Polaris Initializer] INFO: Successfully created test for "SAST" assessment. The short test ID is "N8INRK7"
+2024-11-19 03:23:37.6561 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SAST.id'
+2024-11-19 03:23:37.6565 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SAST.shortId'
+2024-11-19 03:23:37.6580 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SAST.streamId'
+2024-11-19 03:23:37.6584 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.project.id'
+2024-11-19 03:23:37.6587 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.branch.id'
+2024-11-19 03:23:37.6590 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.portfolioid'
+2024-11-19 03:23:37.6593 EST [Polaris Initializer] INFO: Provided value for resource 'polaris.application.id'
+2024-11-19 03:23:37.6597 EST [Polaris Initializer] INFO: Adapter finished
+2024-11-19 03:23:37.6987 EST [Synopsys Bridge] INFO: Starting Adapter: Check pull request
+2024-11-19 03:23:37.7379 EST [Check pull request] INFO: Provided value for resource 'environment.scan.pull'
+2024-11-19 03:23:37.7381 EST [Check pull request] INFO: Adapter finished
+2024-11-19 03:23:37.7521 EST [Polaris Controller] INFO: fetching recommended "coverity" tool info...
+2024-11-19 03:23:38.0477 EST [Polaris Controller] INFO: checking "coverity" tool installation inside bridge home directory: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0
+2024-11-19 03:23:38.0478 EST [Polaris Controller] INFO: either "coverity" tool version "2024.6.0" not found or unable to detect existing installation, will schedule new installation
+2024-11-19 03:23:38.6043 EST [Polaris Controller] INFO: Provided value for resource 'coverity.id'
+2024-11-19 03:23:38.6045 EST [Synopsys Bridge] INFO: Starting adapters for stage coverity-installer
+2024-11-19 03:23:38.6045 EST [Synopsys Bridge] INFO: Starting adapters for stage polaris-sast
+2024-11-19 03:23:38.6045 EST [Synopsys Bridge] INFO: Starting adapters for stage downloader
+2024-11-19 03:23:38.6045 EST [Synopsys Bridge] INFO: Starting adapters for stage polaris-artifacts-uploader
+2024-11-19 03:23:38.6045 EST [Synopsys Bridge] INFO: Starting adapters for stage polaris-post-processing
+2024-11-19 03:23:38.6095 EST [Synopsys Bridge] INFO: Starting Adapter: Coverity Installer
+2024-11-19 03:23:38.6096 EST [Synopsys Bridge] INFO: Starting Adapter: Downloader Adapter
+2024-11-19 03:23:38.6098 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Artifacts Uploader
+2024-11-19 03:23:38.6099 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Waiter
+2024-11-19 03:23:38.6098 EST [Polaris Controller] INFO: Adapter finished
+2024-11-19 03:23:38.6098 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Coverity Capture
+2024-11-19 03:23:38.6099 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Issues Fetcher
+2024-11-19 03:23:38.6099 EST [Synopsys Bridge] INFO: Starting Adapter: Polaris Policy Checker
+2024-11-19 03:23:38.6484 EST [Synopsys Bridge] INFO: Starting Adapter: Default Adapter for download url
+2024-11-19 03:23:38.6493 EST [Default Adapter for download url] INFO: Provided value for resource 'downloads.coverity.url'
+2024-11-19 03:23:38.6495 EST [Default Adapter for download url] INFO: Adapter finished
+2024-11-19 03:23:38.8669 EST [Downloader Adapter] INFO: Beginning download for coverity (245.818MB)
+2024-11-19 03:24:34.1645 EST [Downloader Adapter] INFO: Download for coverity completed.
+2024-11-19 03:24:34.1814 EST [Downloader Adapter] INFO: Provided value for resource 'downloads.coverity.path'
+2024-11-19 03:24:34.1817 EST [Downloader Adapter] INFO: Adapter finished
+2024-11-19 03:24:34.1864 EST [Synopsys Bridge] INFO: Starting Adapter: Default Adapter for install directory
+2024-11-19 03:24:34.1869 EST [Default Adapter for install directory] INFO: Provided value for resource 'coverity.install.directory'
+2024-11-19 03:24:34.1871 EST [Default Adapter for install directory] INFO: Adapter finished
+2024-11-19 03:24:41.4431 EST [Coverity Installer] INFO: Provided value for resource 'coverity.execution.path'
+2024-11-19 03:24:41.4434 EST [Coverity Installer] INFO: Adapter finished
+2024-11-19 03:24:41.4840 EST [Polaris Coverity Capture] INFO: Identified workflow: Polaris
+2024-11-19 03:24:41.4846 EST [Polaris Coverity Capture] INFO: command: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/coverity capture --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir -o analyze.location=connect
+2024-11-19 03:24:41.5254 EST [Polaris Coverity Capture] INFO: coverity 2024.6.0 covcli-2024.6-push-15
+2024-11-19 03:24:41.5254 EST [Polaris Coverity Capture] INFO: envvar: COVERITY_CACHE_API_TOKEN_FILE=/tmp/polaris_coverity_cache2181760436/.authKey
+2024-11-19 03:24:41.5255 EST [Polaris Coverity Capture] INFO: envvar: COVERITY_CACHE_KEY=24e528c3-7c60-434c-9e95-19e841797f55
+2024-11-19 03:24:41.5255 EST [Polaris Coverity Capture] INFO: envvar: COVERITY_CACHE_URL=https://poc.polaris.synopsys.com/api/cache
+2024-11-19 03:24:41.5256 EST [Polaris Coverity Capture] INFO: envvar: COVERITY_CLI_CAPTURE_ZIP_ARCHIVE=/home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir.zip
+2024-11-19 03:24:41.5256 EST [Polaris Coverity Capture] INFO: envvar: COVERITY_CLI_POLARIS_CLIENT=true
+2024-11-19 03:24:41.5260 EST [Polaris Coverity Capture] INFO: Loaded configuration file '/home/giwoong/labs/polaris/c-example-project/coverity.yaml'
+2024-11-19 03:24:41.5263 EST [Polaris Coverity Capture] INFO: Detected that stdout is not connected to a terminal.  Defaulting ticker mode to 'none'.
+2024-11-19 03:24:41.5263 EST [Polaris Coverity Capture] INFO: If this is not correct, explicitly set the ticker mode to the desired value using the '--ticker-mode' option.
+2024-11-19 03:24:41.5278 EST [Polaris Coverity Capture] INFO: Using lightweight capture with thin client.
+2024-11-19 03:24:41.5278 EST [Polaris Coverity Capture] INFO: Caching is enabled.
+2024-11-19 03:24:41.5279 EST [Polaris Coverity Capture] INFO: Executing command: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-manage-emit --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir create
+2024-11-19 03:24:41.5476 EST [Polaris Coverity Capture] INFO: Telemetry is enabled
+2024-11-19 03:24:41.5481 EST [Polaris Coverity Capture] INFO: Executing command: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-manage-emit --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir list-capture-diagnostics
+2024-11-19 03:24:41.5603 EST [Polaris Coverity Capture] INFO: Executing action Delete compiler configurations for intermediate directory '/home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir'
+2024-11-19 03:24:41.5604 EST [Polaris Coverity Capture] INFO: Executing action Configure build compiler: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-configure -c /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/coverity_config.xml --template --compiler gcc --comptype gcc
+2024-11-19 03:24:42.0004 EST [Polaris Coverity Capture] INFO: Executing action no-op: skipping buildless compiler configuration
+2024-11-19 03:24:42.0005 EST [Polaris Coverity Capture] INFO: Loading compiler config '/home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/coverity_config.xml'
+2024-11-19 03:24:42.0040 EST [Polaris Coverity Capture] INFO: Executing action Execute clean command: sh -c make clean
+2024-11-19 03:24:42.0079 EST [Polaris Coverity Capture] INFO: rm -rf test.out
+2024-11-19 03:24:42.0100 EST [Polaris Coverity Capture] INFO: Executing action Invoke build capture: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-build --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir -c /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/coverity_config.xml --append-log --no-security-da --record-with-source --no-xrefs --enable-scan-transparency-data --bytecode-caching sh -c make
+2024-11-19 03:24:42.0190 EST [Polaris Coverity Capture] INFO: Coverity Build Capture (64-bit) version 2024.6.0 on Linux 4.15.0-213-generic x86_64
+2024-11-19 03:24:42.0191 EST [Polaris Coverity Capture] INFO: Internal version numbers: 948d9eb9dd p-2024.6-push-47
+2024-11-19 03:24:42.0191 EST [Polaris Coverity Capture] INFO:
+2024-11-19 03:24:42.0400 EST [Polaris Coverity Capture] INFO:
+2024-11-19 03:24:42.0518 EST [Polaris Coverity Capture] INFO: gcc -c test.c -o test.out
+2024-11-19 03:24:56.4249 EST [Polaris Coverity Capture] INFO: test.c: In function 'paths':
+2024-11-19 03:24:56.4250 EST [Polaris Coverity Capture] INFO: test.c:110:8: warning: implicit declaration of function 'some_other_function'; did you mean '__fortify_function'? [-Wimplicit-function-declaration]
+2024-11-19 03:24:56.4250 EST [Polaris Coverity Capture] INFO:    if (!some_other_function()) {
+2024-11-19 03:24:56.4250 EST [Polaris Coverity Capture] INFO:         ^~~~~~~~~~~~~~~~~~~
+2024-11-19 03:24:56.4250 EST [Polaris Coverity Capture] INFO:         __fortify_function
+2024-11-19 03:24:56.4270 EST [Polaris Coverity Capture] INFO: test.c:115:8: warning: implicit declaration of function 'yet_another_function'; did you mean '__fortify_function'? [-Wimplicit-function-declaration]
+2024-11-19 03:24:56.4270 EST [Polaris Coverity Capture] INFO:    if (!yet_another_function()) {
+2024-11-19 03:24:56.4271 EST [Polaris Coverity Capture] INFO:         ^~~~~~~~~~~~~~~~~~~~
+2024-11-19 03:24:56.4271 EST [Polaris Coverity Capture] INFO:         __fortify_function
+2024-11-19 03:24:56.4290 EST [Polaris Coverity Capture] INFO: test.c:119:3: warning: implicit declaration of function 'do_some_things' [-Wimplicit-function-declaration]
+2024-11-19 03:24:56.4291 EST [Polaris Coverity Capture] INFO:    do_some_things(p);
+2024-11-19 03:24:56.4291 EST [Polaris Coverity Capture] INFO:    ^~~~~~~~~~~~~~
+2024-11-19 03:24:56.9642 EST [Polaris Coverity Capture] INFO: Attempting to detect unconfigured compilers in build
+2024-11-19 03:24:56.9721 EST [Polaris Coverity Capture] INFO: |0----------25-----------50----------75---------100|
+2024-11-19 03:24:56.9870 EST [Polaris Coverity Capture] INFO: ****************************************************
+2024-11-19 03:24:56.9901 EST [Polaris Coverity Capture] INFO: Recorded 1 C/C++ compilation units (100%) successfully. These compilation units are ready for replay
+2024-11-19 03:24:56.9902 EST [Polaris Coverity Capture] INFO:
+2024-11-19 03:24:56.9902 EST [Polaris Coverity Capture] INFO: The cov-build utility completed successfully.
+2024-11-19 03:24:57.0365 EST [Polaris Coverity Capture] INFO: Executing action Invalidate capture results
+2024-11-19 03:24:57.0366 EST [Polaris Coverity Capture] INFO: Executing action Update uncaptured file timestamps for project "/home/giwoong/labs/polaris/c-example-project/Makefile"
+2024-11-19 03:24:57.0367 EST [Polaris Coverity Capture] INFO: Executing command: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-manage-emit --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir list-capture-diagnostics
+2024-11-19 03:24:57.0542 EST [Polaris Coverity Capture] INFO: Executing action Emit files using buildless capture: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-internal-capture-files --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir -c /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir/coverity-cli/capture-file-list-139936478 --record-with-source
+2024-11-19 03:24:57.0574 EST [Polaris Coverity Capture] INFO: Buildless capture started.
+2024-11-19 03:24:57.0651 EST [Polaris Coverity Capture] INFO: Emitting 0 Files.
+2024-11-19 03:24:57.0652 EST [Polaris Coverity Capture] INFO:
+2024-11-19 03:24:57.0652 EST [Polaris Coverity Capture] INFO: Buildless capture completed.
+2024-11-19 03:24:57.0662 EST [Polaris Coverity Capture] INFO: Executing action deleteResidualTUs /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir
+2024-11-19 03:24:57.0663 EST [Polaris Coverity Capture] INFO: Executing command: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-manage-emit --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir list-capture-diagnostics
+2024-11-19 03:24:57.0745 EST [Polaris Coverity Capture] INFO: Executing action Invalidate capture results
+2024-11-19 03:24:57.0753 EST [Polaris Coverity Capture] INFO: Executing command: /home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/cov-manage-emit --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir list-capture-diagnostics
+2024-11-19 03:24:57.0860 EST [Polaris Coverity Capture] INFO: Capture summary:
+2024-11-19 03:24:57.0861 EST [Polaris Coverity Capture] INFO:     SUCCEEDED: 1
+2024-11-19 03:24:57.0861 EST [Polaris Coverity Capture] INFO:     INCOMPLETE: 0
+2024-11-19 03:24:57.0861 EST [Polaris Coverity Capture] INFO:     FAILED: 0
+2024-11-19 03:24:57.0861 EST [Polaris Coverity Capture] INFO:     IGNORED: 6
+2024-11-19 03:24:57.0862 EST [Polaris Coverity Capture] INFO:     FILES CAPTURED: 1
+2024-11-19 03:24:57.0862 EST [Polaris Coverity Capture] INFO:     LINES OF CODE: 93
+2024-11-19 03:24:57.0863 EST [Polaris Coverity Capture] INFO: Capture phase took 15.558s.
+2024-11-19 03:24:57.1629 EST [Polaris Coverity Capture] INFO: To analyze your project, type '/home/giwoong/.synopsys/bridge/tools/cov-thin-client/2024.6.0/bin/coverity analyze --dir /home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir -o analyze.location=connect'.
+2024-11-19 03:24:57.1951 EST [Polaris Coverity Capture] INFO: Provided value for resource 'coverity.completed'
+2024-11-19 03:24:57.1957 EST [Polaris Coverity Capture] INFO: Provided value for resource 'coverity.idir.output'
+2024-11-19 03:24:57.1962 EST [Polaris Coverity Capture] INFO: Provided value for resource 'polaris.artifacts.coverity.path'
+2024-11-19 03:24:57.1966 EST [Polaris Coverity Capture] INFO: Adapter finished
+2024-11-19 03:24:57.2228 EST [Polaris Artifacts Uploader] INFO: uploading artifact for "sast" assessment with id "61a04556-de8c-463d-8df5-1a147a707bac"
+2024-11-19 03:24:58.2012 EST [Polaris Artifacts Uploader] INFO: Uploading artifact "/home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir.zip" for "sast" assessment
+2024-11-19 03:24:58.3224 EST [Polaris Artifacts Uploader] INFO: Uploading Progress of "sast" artifact:  27%  163840/592776
+2024-11-19 03:24:58.3454 EST [Polaris Artifacts Uploader] INFO: Uploading Progress of "sast" artifact:  52%  311296/592776
+2024-11-19 03:24:58.3879 EST [Polaris Artifacts Uploader] INFO: Uploading Progress of "sast" artifact:  77%  458752/592776
+2024-11-19 03:24:58.3900 EST [Polaris Artifacts Uploader] INFO: Uploading Progress of "sast" artifact: 100%  592776/592776
+2024-11-19 03:24:58.8522 EST [Polaris Artifacts Uploader] INFO: successfully uploaded artifact "/home/giwoong/labs/polaris/c-example-project/.bridge/Polaris Coverity Capture/idir.zip"
+2024-11-19 03:24:59.7326 EST [Polaris Artifacts Uploader] INFO: successfully resumed "sast" assessment with id "61a04556-de8c-463d-8df5-1a147a707bac"
+2024-11-19 03:24:59.7500 EST [Polaris Artifacts Uploader] INFO: Provided value for resource 'polaris.artifacts.coverity.uploadSuccessful'
+2024-11-19 03:24:59.7503 EST [Polaris Artifacts Uploader] INFO: Adapter finished
+2024-11-19 03:24:59.7815 EST [Polaris Waiter] INFO: Waiting for test with assessment type "sast" and id "61a04556-de8c-463d-8df5-1a147a707bac"
+2024-11-19 03:24:59.9825 EST [Polaris Waiter] INFO: Polling Test Manager: state of test with assessment type "sast" and id "61a04556-de8c-463d-8df5-1a147a707bac" is "Waiting for Capture"
+2024-11-19 03:25:10.1144 EST [Polaris Waiter] INFO: Polling Test Manager: state of test with assessment type "sast" and id "61a04556-de8c-463d-8df5-1a147a707bac" is "Scanning"
+2024-11-19 03:27:11.6890 EST [Polaris Waiter] INFO: test with assessment type "sast" and id "61a04556-de8c-463d-8df5-1a147a707bac" completed successfully
+2024-11-19 03:27:11.7143 EST [Polaris Waiter] INFO: Provided value for resource 'polaris.test.sast.completed'
+2024-11-19 03:27:11.7146 EST [Polaris Waiter] INFO: Adapter finished
+2024-11-19 03:27:11.7553 EST [Polaris Policy Checker] INFO: Checking for policy violations for "SAST" assessment...
+2024-11-19 03:27:12.1383 EST [Polaris Policy Checker] INFO: no policies were violated to break the build
+2024-11-19 03:27:12.1655 EST [Polaris Policy Checker] INFO: Adapter finished
+2024-11-19 03:27:12.1726 EST [Polaris Issues Fetcher] INFO: Fetching issues for "SAST" assessment
+2024-11-19 03:27:12.4488 EST [Polaris Issues Fetcher] INFO: Successfully fetched issues for assessment type "SAST" with id "61a04556-de8c-463d-8df5-1a147a707bac"
+ {
+ "critical": 0,
+ "high": 10,
+ "informational": 0,
+ "low": 0,
+ "medium": 4
+}
+2024-11-19 03:27:12.4786 EST [Polaris Issues Fetcher] INFO: Provided value for resource 'polaris.test.SAST.issues.critical'
+2024-11-19 03:27:12.4793 EST [Polaris Issues Fetcher] INFO: Provided value for resource 'polaris.test.SAST.issues.low'
+2024-11-19 03:27:12.4800 EST [Polaris Issues Fetcher] INFO: Provided value for resource 'polaris.test.SAST.issues.medium'
+2024-11-19 03:27:12.4807 EST [Polaris Issues Fetcher] INFO: Provided value for resource 'polaris.test.SAST.issues.high'
+2024-11-19 03:27:12.4811 EST [Polaris Issues Fetcher] INFO: Adapter finished
+2024-11-19 03:27:12.5330 EST [Polaris Status Provider] INFO: Results for test "SAST" with id "61a04556-de8c-463d-8df5-1a147a707bac" are available at "https://poc.polaris.synopsys.com/portfolio/portfolios/a0fcefe1-1955-4a31-9ba6-e6eafc19347f/portfolio-items/ae916d75-bdce-4634-9694-697f28999cdc/projects/a6a43690-ac03-4765-be44-fd3765d1f65b/tests/61a04556-de8c-463d-8df5-1a147a707bac/detected-issues"
+2024-11-19 03:27:12.5331 EST [Polaris Status Provider] INFO: Polaris issues view for project "c-example-project", branch "main" is available at "https://poc.polaris.synopsys.com/portfolio/portfolios/a0fcefe1-1955-4a31-9ba6-e6eafc19347f/portfolio-items/ae916d75-bdce-4634-9694-697f28999cdc/projects/a6a43690-ac03-4765-be44-fd3765d1f65b/issues?branchId=9e8f8b04-5ab7-4044-a8bc-82bb79e69761"
+2024-11-19 03:27:12.5556 EST [Polaris Status Provider] INFO: Provided value for resource 'polaris.test.SAST.summary.url'
+2024-11-19 03:27:12.5559 EST [Polaris Status Provider] INFO: Provided value for resource 'polaris.project.issues.url'
+2024-11-19 03:27:12.5562 EST [Polaris Status Provider] INFO: Adapter finished
+

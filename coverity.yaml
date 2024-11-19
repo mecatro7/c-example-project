@@ -1,0 +1,8 @@
+capture:
+  build:
+    clean-command: make clean
+    build-command: make
+  compiler-configuration:
+    cov-configure:
+    - [ --template, --compiler, gcc, --comptype, gcc ]
+

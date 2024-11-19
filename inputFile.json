@@ -15,7 +15,7 @@
 				"types":  ["SAST"]
 
 			},
-			"serverUrl": "https://polaris.synopsys.com"
+			"serverUrl": "https://poc.polaris.synopsys.com"
 		}
 	}
 }

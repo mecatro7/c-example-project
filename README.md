@@ -27,3 +27,9 @@ cov-commit-defects --dir coverity_result/idir/ --strip-path /c/Works/labs/tmp/c-
 ```sh
 coverity scan --dir coverity_result/idir --local coverity_result/analysis
 ```
+
+
+## Polaris Scan
+```sh
+synopsys-bridge --stage polaris --input inputFile.json
+```

@@ -1,0 +1,21 @@
+{
+	"data": {
+		"polaris": {
+			"application": {
+				"name": "gwyi"
+			},
+			"project": {
+				"name": "c-example-project"
+			},
+			"branch": {
+            	"name": "main"
+            },
+			"assessment": {
+				"mode": "SOURCE_UPLOAD",
+				"types":  ["SAST"]
+
+			},
+			"serverUrl": "https://polaris.synopsys.com"
+		}
+	}
+}

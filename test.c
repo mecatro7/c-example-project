@@ -10,6 +10,22 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+int some_other_function()
+{
+  return 0;
+}
+
+int do_some_things(char* p)
+{
+        return 0;
+}
+
+int yet_another_function()
+{
+  return 0;
+}
+
+
 void forward_null(void)
         {
           char* p = 0;
